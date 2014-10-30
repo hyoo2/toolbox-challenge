@@ -1,6 +1,15 @@
 // app.js: our main javascript file for this app
 "use strict"; // avoid errors when misspelling a variable name
 
+// 4 variables
+// track image in 1st movement, compare to 2nd movement (can use 1 variable)
+// match or not, increase state game variable
+// matches = 8 or remaining = 0
+// can't flip until done flipping --> delay --> (window.setTimeout(function() { .... }, 1000);
+// variable boolean true/false resetting between clicks in game, resetting after game is over, true = flip.....
+// set & clear at right time
+// return to ignore
+
 var tiles = [];
 var idx;
 
