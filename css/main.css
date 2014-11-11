@@ -1,9 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 
-
+header {
+    font-size: 75px;
+}
 
 #game-board img {
+    /*background-color: ;*/
     width: 25%;
     height: 25%;
     padding: 5px;
     box-sizing: border-box;
 }
+
+body {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-color: darkmagenta;*/
+    /*color: azure;*/
+/*
+    color: FFFFFF;
+*/
+    font-family: 'Pacifico', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#restartGame {
+    position: fixed;
+    left: 0; top: 0;
+    color: #FFFFFF;
+    background-color: #000000;
+    opacity: 0.9;
+    z-index: 1;
+    width: 100%;
+    display: none;
+}
+
+/*.container-fluid {
+    background-color: #8EE5EE;
+}*/

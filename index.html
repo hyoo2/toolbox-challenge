@@ -1,22 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en">
+<html lang="en">
+    <head>
         <meta charset="UTF-8">
         <title>Memory!</title>
+        <!--<link rel="stylesheet" href="css/bootstrap.css"/>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
+        <header>
+            <h1>Memory!</h1>
+        </header>
 
-        <h1>Memory!</h1>
-        <p><button id="start-game">Start New Game</button></p>
+        <p>How to play: Match each card with its pair until
+            every card is flipped up! Then you win the game!</p>
+        <p><button id="new-game">Start New Game</button></p>
 
-        <p>elapsed time: <span id="elapsed-seconds"></span></p>
+        <main class="container-fluid">
+            <div class="board">
+                <h2>Stats:</h2>
+                <h3>Elapsed Time: <span id="elapsed-seconds"></span></h3>
+                <h3> Matches: <span id="matches"></span></h3>
+                <h3>Remaining Pairs: <span id="remaining-pairs"></span></h3>
+                <h3>Attempts: <span id="attempts"></span></h3>
 
-        <div id="game-board"></div>
 
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-        <script src="js/app.js"></script>
+                <!--<div class="col-md-3">
+                    <p>Elapsed Time: <span id="elapsed-seconds"></span></p>
+                </div>
+
+                <div class="col-md-3">
+                    <p id="matches" name="matches">Matches: </p>
+                </div>
+
+                <div class="'col-md-3">
+                    <p>Remaining Pairs: <span id="remaining-pairs"></span></p>
+                </div>
+
+                <div class="col-md-3">
+                    <p>Attempts: <span id="attempts"></span></p>
+                </div>-->
+            </div>
+
+            <div id="game-board"></div>
+
+            <div id="restartGame">
+                <h1>CONGRATULATIONS! YOU WON!</h1>
+                <p><button id="play-again">Play again?</button></p>
+            </div>
+        </main>
 
     </body>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="js/app.js"></script>
 </html>
