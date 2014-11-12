@@ -84,7 +84,7 @@ function compareImg(currImg) {
 function flipTile(tile, img) {
     img.fadeOut(100, function() {
         if (tile.flipped) {
-            img.attr('src', 'img/tile-back.png');
+            img.attr('src', 'img/forget-me-not.jpg');
         }
         else {
             img.attr('src', tile.src);
@@ -142,7 +142,7 @@ function setUpBoard() {
 
         img = $(document.createElement('img'));
         img.attr({
-            src: 'img/tile-back.png',
+            src: 'img/forget-me-not.jpg',
             alt: 'tile ' + tile.tileNum
         });
 
